@@ -1,7 +1,9 @@
-public class Human {
-    private String name;
-    private int age;
-    private boolean isReady;
+package models;
+
+public abstract class Human {
+    protected String name;
+    protected int age;
+    protected boolean isReady;
 
     public Human(String name, int age, boolean isReady) {
         this.name = name;
@@ -26,4 +28,6 @@ public class Human {
 
     public boolean getIsReady() {return isReady;}
     public void setIsReady(boolean isReady) {this.isReady = isReady;}
+
+    public abstract void performTask();
 }
